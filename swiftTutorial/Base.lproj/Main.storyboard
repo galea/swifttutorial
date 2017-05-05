@@ -34,22 +34,40 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hCT-iQ-eZj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29H-rx-mos">
-                                <rect key="frame" x="157.5" y="126" width="60" height="30"/>
-                                <state key="normal" title="Push Me"/>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z2G-QQ-H7Y">
+                                <rect key="frame" x="137.5" y="119" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="iCZ-VU-T8p"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EjU-lN-Oa0">
+                                <rect key="frame" x="137.5" y="169" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Zes-sQ-fhx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="29H-rx-mos" firstAttribute="top" secondItem="pea-hC-Jxm" secondAttribute="bottom" constant="15" id="K1l-2g-RBb"/>
-                            <constraint firstItem="29H-rx-mos" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OKr-8F-c1g"/>
+                            <constraint firstItem="z2G-QQ-H7Y" firstAttribute="top" secondItem="pea-hC-Jxm" secondAttribute="bottom" constant="8" id="HeG-ty-7dy"/>
+                            <constraint firstItem="EjU-lN-Oa0" firstAttribute="top" secondItem="z2G-QQ-H7Y" secondAttribute="bottom" constant="20" id="PHc-YY-6Cv"/>
                             <constraint firstItem="pea-hC-Jxm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SdW-BZ-YF4"/>
                             <constraint firstItem="Jjk-Dn-DtK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uWS-nU-WmF"/>
                             <constraint firstItem="Jjk-Dn-DtK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="uu2-ub-NIU"/>
                             <constraint firstItem="pea-hC-Jxm" firstAttribute="top" secondItem="Jjk-Dn-DtK" secondAttribute="bottom" constant="20" id="xpy-7p-LmV"/>
+                            <constraint firstItem="z2G-QQ-H7Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z7s-8A-MtW"/>
+                            <constraint firstItem="EjU-lN-Oa0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zwL-y2-maS"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="z2G-QQ-H7Y" id="tik-fQ-AhY"/>
+                        <outlet property="text2" destination="EjU-lN-Oa0" id="dbN-A2-C4C"/>
                         <outlet property="theLabel" destination="Jjk-Dn-DtK" id="39U-6r-EEv"/>
                     </connections>
                 </viewController>
