@@ -3,7 +3,7 @@
 //  swiftTutorial
 //
 //  Created by Bogdan A Galea on 2017-05-05.
-//  Copyright © 2017 WhiteBelt Apps. All rights reserved.
+//  Copyright © 2017 WhiteBelt Apps. All rights reserved.....
 //
 
 import UIKit
